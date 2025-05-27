@@ -5,8 +5,8 @@ import { MapPin, Clock, Shield } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Dylan Frost - Trusted Contractor in London, ON",
-  description: "Get a free quote for your construction project. Serving London and St. Thomas with over 25 years of experience.",
+  title: "Contact Dylan Frost - Experienced Contractor & Carpenter",
+  description: "Get in touch for construction projects, employment opportunities, or general inquiries. 25+ years experience in London and St. Thomas, Ontario.",
   robots: {
     index: true,
     follow: true,
@@ -19,10 +19,10 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-3xl font-bold mb-4">Get Your Free Quote Today</h1>
+            <h1 className="text-3xl font-bold mb-4">Let&apos;s Connect</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ready to start your project? I&apos;d love to hear about it. Send me a message 
-              and I&apos;ll get back to you within 24 hours with a detailed quote.
+              Whether you&apos;re interested in my construction services, considering me for a position, 
+              or just want to connect, I&apos;d love to hear from you. I respond to all inquiries within 24-48 hours.
             </p>
           </div>
 
@@ -50,7 +50,7 @@ export default function ContactPage() {
                   Response Time
                 </h3>
                 <p className="text-muted-foreground">
-                  I typically respond to all inquiries within 24 hours. For urgent 
+                  I typically respond to all inquiries within 24-48 hours. For urgent
                   matters, please call directly and I&apos;ll do my best to respond 
                   the same day.
                 </p>
@@ -63,7 +63,7 @@ export default function ContactPage() {
                 </h3>
                 <p className="text-muted-foreground">
                   Your contact information is never shared with third parties. 
-                  I use it solely to communicate about your project and provide 
+                  I use it solely to communicate with you and provide 
                   the best possible service.
                 </p>
               </Card>

@@ -5,7 +5,7 @@ import { Button } from "./button";
 import { Card } from "./card";
 
 interface ContactFormProps {
-  className?: string;
+  readonly className?: string;
 }
 
 export default function ContactForm({ className }: ContactFormProps) {
@@ -20,7 +20,7 @@ export default function ContactForm({ className }: ContactFormProps) {
     e.preventDefault();
     
     // Construct mailto with form data
-    const subject = encodeURIComponent(`Project Inquiry from ${formData.name}`);
+    const subject = encodeURIComponent(`Message from ${formData.name}`);
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
     );
@@ -40,7 +40,7 @@ export default function ContactForm({ className }: ContactFormProps) {
 
   return (
     <Card className={`p-6 ${className}`}>
-      <h3 className="text-lg font-semibold mb-4">Get a Free Quote</h3>
+      <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">
@@ -88,7 +88,7 @@ export default function ContactForm({ className }: ContactFormProps) {
         
         <div>
           <label htmlFor="message" className="block text-sm font-medium mb-1">
-            Project Details *
+            Message *
           </label>
           <textarea
             id="message"
@@ -97,7 +97,7 @@ export default function ContactForm({ className }: ContactFormProps) {
             rows={4}
             value={formData.message}
             onChange={handleChange}
-            placeholder="Tell me about your project..."
+            placeholder="Tell me about your project, job opportunity, or just say hello..."
             className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring resize-vertical"
           />
         </div>
