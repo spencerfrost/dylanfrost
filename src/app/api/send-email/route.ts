@@ -57,7 +57,7 @@ ${sanitizedMessage}
           </div>
         </div>
       `,
-      reply_to: email,
+      replyTo: email,
     });
 
     if (error) {

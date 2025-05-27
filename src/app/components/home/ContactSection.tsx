@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ export default function ContactSection() {
         Let&apos;s Build Something Great Together
       </h2>
       <p className="mb-6 text-base text-muted-foreground">
-        Whether you&apos;re planning a construction project or looking for an experienced carpenter, 
+        Whether you&apos;re planning a construction project or looking for an experienced carpenter,
         I&apos;d love to discuss how we can work together.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -26,9 +26,9 @@ export default function ContactSection() {
             Get In Touch
           </Link>
         </Button>
-        <Button 
+        <Button
           onClick={handlePhoneClick}
-          size="lg" 
+          size="lg"
           variant="outline"
           className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
         >

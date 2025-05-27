@@ -1,10 +1,10 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/app/components/ui/badge";
 
 export default function SkillsSection() {
   return (
     <section className="w-full max-w-4xl mb-8 mt-8 px-4">
       <h2 className="text-xl font-semibold mb-4">Construction Skills & Certifications</h2>
-      
+
       <div className="space-y-4">
         <div>
           <h3 className="text-lg font-medium mb-2 text-muted-foreground">Equipment Operation</h3>
@@ -16,7 +16,7 @@ export default function SkillsSection() {
             <Badge variant="accent">Woodworking tools</Badge>
           </div>
         </div>
-        
+
         <div>
           <h3 className="text-lg font-medium mb-2 text-muted-foreground">Heavy Machinery</h3>
           <div className="flex flex-wrap gap-2">
@@ -25,7 +25,7 @@ export default function SkillsSection() {
             <Badge variant="accent">Construction vehicles</Badge>
           </div>
         </div>
-        
+
         <div>
           <h3 className="text-lg font-medium mb-2 text-muted-foreground">Safety Certifications</h3>
           <div className="flex flex-wrap gap-2">
@@ -33,7 +33,7 @@ export default function SkillsSection() {
             <Badge variant="default">MSDS trained</Badge>
           </div>
         </div>
-        
+
         <div>
           <h3 className="text-lg font-medium mb-2 text-muted-foreground">Languages</h3>
           <div className="flex flex-wrap gap-2">

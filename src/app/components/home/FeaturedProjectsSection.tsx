@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export default function FeaturedProjectsSection() {
@@ -49,7 +49,7 @@ export default function FeaturedProjectsSection() {
           </div>
         </Link>
       </div>
-      
+
       <div className="text-center hidden sm:block">
         <Button asChild variant="outline" size="lg">
           <Link href="/work">

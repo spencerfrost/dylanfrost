@@ -5,7 +5,6 @@ import ComplianceSection from "@/components/hire/ComplianceSection";
 import WhyHireSection from "@/components/hire/WhyHireSection";
 import ContactSection from "@/components/hire/ContactSection";
 import { Separator } from "@/components/ui/separator";
-
 export default function Hire() {
   return (
     <div className="flex flex-col items-center">

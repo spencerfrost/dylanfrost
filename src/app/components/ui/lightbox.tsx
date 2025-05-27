@@ -4,10 +4,12 @@ import Gallery from '@/components/ui/gallery';
 
 interface LightboxProps {
   images: string[];
+  currentIndex?: number;
   onClose: () => void;
+  setCurrent?: (index: number) => void;
 }
 
-const Lightbox: React.FC<LightboxProps> = ({ images, onClose }) => {
+const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex = 0, onClose, setCurrent }) => {
   return (
     <Dialog open onOpenChange={onClose} aria-label="Image lightbox">
       <DialogContent

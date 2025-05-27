@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '@/components/ui/carousel';
 import Lightbox from '@/components/ui/lightbox';
 import Image from 'next/image';
-import { UseEmblaCarouselType } from 'embla-carousel-react';
 
 export interface GalleryProps {
   images: string[];
@@ -13,20 +12,24 @@ export interface GalleryProps {
 }
 
 const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt = '', showNavigation = false, className }) => {
-  const [mainApi, setMainApi] = useState<UseEmblaCarouselType | null>(null);
-  const [thumbApi, setThumbApi] = useState<UseEmblaCarouselType | null>(null);
+  const [mainApi, setMainApi] = useState<CarouselApi>();
+  const [thumbApi, setThumbApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   useEffect(() => {
     if (!mainApi || !thumbApi) return;
+    
     const onMainSelect = () => {
       const selected = mainApi.selectedScrollSnap();
       setCurrent(selected);
       thumbApi.scrollTo(selected);
     };
+    
     mainApi.on('select', onMainSelect);
-    return () => mainApi.off('select', onMainSelect);
+    return () => {
+      mainApi.off('select', onMainSelect);
+    };
   }, [mainApi, thumbApi]);
 
   const onThumbClick = useCallback((index: number) => {

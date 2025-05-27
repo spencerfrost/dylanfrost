@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { Download, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ export default function ContactSection() {
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">Let&apos;s Work Together</h2>
         <p className="text-muted-foreground mb-4">Ready to discuss your next project? Get in touch!</p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
           <Button
             asChild
@@ -27,7 +27,7 @@ export default function ContactSection() {
               Get In Touch
             </Link>
           </Button>
-          
+
           <Button
             onClick={handlePhoneClick}
             size="lg"
@@ -39,7 +39,7 @@ export default function ContactSection() {
           </Button>
         </div>
       </div>
-      
+
       <Button
         asChild
         size="lg"
