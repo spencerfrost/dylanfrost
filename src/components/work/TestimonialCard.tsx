@@ -18,7 +18,7 @@ interface TestimonialCardProps {
 export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <Card className="h-full hover:shadow-lg transition-shadow duration-300">
-      <CardContent className="pt-6 flex flex-col h-full">
+      <CardContent className="flex flex-col h-full">
         {testimonial.project && (
           <div className="mb-3">
             <Badge variant="outline" className="text-xs">
