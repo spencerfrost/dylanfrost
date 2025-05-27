@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "./button";
-import { Card } from "./card";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 interface ContactFormProps {
   readonly className?: string;

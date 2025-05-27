@@ -1,6 +1,6 @@
 import React from 'react';
-import { Dialog, DialogContent } from './dialog';
-import Gallery from './gallery';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
+import Gallery from '@/components/ui/gallery';
 
 interface LightboxProps {
   images: string[];

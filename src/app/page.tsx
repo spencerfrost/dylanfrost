@@ -1,12 +1,12 @@
-import HeroSection from "./components/shared/HeroSection";
-import { Button } from "./components/ui/button";
-import AboutSection from "./components/home/AboutSection";
-import ServicesSection from "./components/home/ServicesSection";
-import FeaturedProjectsSection from "./components/home/FeaturedProjectsSection";
-import ProfessionalSummarySection from "./components/home/ProfessionalSummarySection";
-import CertificationsSection from "./components/home/CertificationsSection";
-import TestimonialsSection from "./components/home/TestimonialsSection";
-import ContactSection from "./components/home/ContactSection";
+import HeroSection from "@/components/shared/HeroSection";
+import { Button } from "@/components/ui/button";
+import AboutSection from "@/components/home/AboutSection";
+import ServicesSection from "@/components/home/ServicesSection";
+import FeaturedProjectsSection from "@/components/home/FeaturedProjectsSection";
+import ProfessionalSummarySection from "@/components/home/ProfessionalSummarySection";
+import CertificationsSection from "@/components/home/CertificationsSection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
+import ContactSection from "@/components/home/ContactSection";
 
 export default function HomePage() {
   return (

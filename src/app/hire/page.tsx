@@ -1,10 +1,10 @@
-import HeroSection from "../components/shared/HeroSection";
-import SkillsSection from "../components/hire/SkillsSection";
-import ExperienceSection from "../components/hire/ExperienceSection";
-import ComplianceSection from "../components/hire/ComplianceSection";
-import WhyHireSection from "../components/hire/WhyHireSection";
-import ContactSection from "../components/hire/ContactSection";
-import { Separator } from "../components/ui/separator";
+import HeroSection from "@/components/shared/HeroSection";
+import SkillsSection from "@/components/hire/SkillsSection";
+import ExperienceSection from "@/components/hire/ExperienceSection";
+import ComplianceSection from "@/components/hire/ComplianceSection";
+import WhyHireSection from "@/components/hire/WhyHireSection";
+import ContactSection from "@/components/hire/ContactSection";
+import { Separator } from "@/components/ui/separator";
 
 export default function Hire() {
   return (

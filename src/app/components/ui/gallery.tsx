@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './carousel';
-import Lightbox from './lightbox';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import Lightbox from '@/components/ui/lightbox';
 import Image from 'next/image';
 import { EmblaCarouselType } from 'embla-carousel-react';
 

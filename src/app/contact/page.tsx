@@ -1,5 +1,5 @@
-import ContactForm from "../components/ui/contact-form";
-import { Card } from "../components/ui/card";
+import ContactForm from "@/components/ui/contact-form";
+import { Card } from "@/components/ui/card";
 import { MapPin, Clock, Shield } from "lucide-react";
 import type { Metadata } from "next";
 
