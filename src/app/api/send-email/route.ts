@@ -1,15 +1,12 @@
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
-// Initialize Resend with the API key from environment variables
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
-    // Extract data from the contact form submission
     const { name, email, phone, message } = await request.json();
 
-    // Input validation
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: 'Missing required fields. Name, email, and message are required.' },
@@ -17,7 +14,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return NextResponse.json(
@@ -26,18 +22,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Sanitize input to prevent XSS
     const sanitizedName = name.replace(/[<>]/g, '');
     const sanitizedMessage = message.replace(/[<>]/g, '');
     const sanitizedPhone = phone ? phone.replace(/[<>]/g, '') : '';
 
-    // Construct the email subject
     const subject = `New Contact Form Message from ${sanitizedName}`;
 
-    // Send the email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'Dylan Frost Construction <onboarding@resend.dev>', // Will be updated after domain verification
-      to: ['dylanfrost@gmail.com'], // Dylan's email address
+      from: 'Dylan Frost Construction <onboarding@resend.dev>',
+      to: ['dylanfrost@gmail.com'],
       subject: subject,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -64,7 +57,7 @@ ${sanitizedMessage}
           </div>
         </div>
       `,
-      reply_to: email, // Set the sender's email as the reply-to address
+      reply_to: email,
     });
 
     if (error) {

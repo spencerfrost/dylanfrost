@@ -18,7 +18,6 @@ const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt =
   const [current, setCurrent] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
-  // Sync thumbnail carousel when main carousel changes
   useEffect(() => {
     if (!mainApi || !thumbApi) return;
     const onMainSelect = () => {
@@ -30,12 +29,10 @@ const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt =
     return () => mainApi.off('select', onMainSelect);
   }, [mainApi, thumbApi]);
 
-  // Sync main carousel when thumbnail is clicked
   const onThumbClick = useCallback((index: number) => {
     mainApi?.scrollTo(index);
   }, [mainApi]);
 
-  // Keyboard navigation for lightbox
   useEffect(() => {
     if (!enableLightbox || !lightboxOpen) return;
     const handleKey = (e: KeyboardEvent) => {

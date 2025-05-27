@@ -41,7 +41,6 @@ export default function ContactForm({ className }: ContactFormProps) {
           type: 'success', 
           message: data.message ?? 'Message sent successfully!' 
         });
-        // Clear the form
         setFormData({
           name: "",
           email: "",

@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export default function CallToActionSection() {
   const handlePhoneClick = () => {
-    // Construct phone number to avoid scraping
     const phoneDigits = ['519', '670', '9420'];
     const phone = phoneDigits.join('');
     window.location.href = `tel:+1${phone}`;
