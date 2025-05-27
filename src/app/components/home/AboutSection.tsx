@@ -22,18 +22,18 @@ export default function AboutSection() {
             className="object-cover"
           />
         </div>
-        <div>
+        <div className="text-center sm:text-left w-full">
           <h2 className="text-2xl font-bold mb-2">
             A Contractor You Can Trust
           </h2>
-          <p className="text-base text-muted-foreground max-w-xl">
+          <p className="text-base text-muted-foreground max-w-xl mx-auto sm:mx-0">
             I&apos;m Dylan Frost, a trusted contractor serving London and St. Thomas with 
             over 25 years of experience. I believe in delivering exceptional quality, 
             honest communication, and treating every project like it&apos;s my own home. 
             From residential renovations to commercial projects, I&apos;m committed to 
             exceeding your expectations.
           </p>
-          <div className="flex flex-col sm:flex-row gap-2 items-center text-sm text-muted-foreground mt-4">
+          <div className="flex flex-col sm:flex-row gap-2 items-center sm:items-center text-sm text-muted-foreground mt-4 justify-center sm:justify-start">
             <span className="flex items-center gap-1">
               <MapPin className="w-4 h-4" /> Serving London & St. Thomas, ON
             </span>
