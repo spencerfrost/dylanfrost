@@ -1,7 +1,16 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function ContactSection() {
+  const handlePhoneClick = () => {
+    // Construct phone number to avoid scraping
+    const phoneDigits = ['519', '670', '9420'];
+    const phone = phoneDigits.join('');
+    window.location.href = `tel:+1${phone}`;
+  };
   return (
     <section className="w-full max-w-4xl mb-8 text-center">
       <div className="mb-6">
@@ -14,22 +23,20 @@ export default function ContactSection() {
             size="lg"
             className="bg-yellow-700 hover:bg-yellow-800 text-white"
           >
-            <a href="mailto:dylanfrost@gmail.com">
+            <Link href="/contact">
               <Mail className="mr-2 h-4 w-4" />
-              dylanfrost@gmail.com
-            </a>
+              Get In Touch
+            </Link>
           </Button>
           
           <Button
-            asChild
+            onClick={handlePhoneClick}
             size="lg"
             variant="outline"
             className="border-yellow-700 text-yellow-700 hover:bg-yellow-50"
           >
-            <a href="tel:519-670-9420">
-              <Phone className="mr-2 h-4 w-4" />
-              519-670-9420
-            </a>
+            <Phone className="mr-2 h-4 w-4" />
+            Call for Quote
           </Button>
         </div>
       </div>

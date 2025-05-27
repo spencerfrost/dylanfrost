@@ -1,7 +1,16 @@
+"use client";
+
 import { Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutSection() {
+  const handlePhoneClick = () => {
+    // Construct phone number to avoid scraping
+    const phoneDigits = ['519', '670', '9420'];
+    const phone = phoneDigits.join('');
+    window.location.href = `tel:+1${phone}`;
+  };
   return (
     <section className="w-full max-w-3xl flex flex-col items-center py-12 px-4">
       <div className="flex flex-col sm:flex-row items-center gap-8">
@@ -26,19 +35,24 @@ export default function AboutSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-2 items-center text-sm text-muted-foreground mt-4">
             <span className="flex items-center gap-1">
-              <MapPin className="w-4 h-4" /> 89 Sterling St, London, ON
+              <MapPin className="w-4 h-4" /> Serving London & St. Thomas, ON
             </span>
             <span className="hidden sm:inline">•</span>
-            <span className="flex items-center gap-1">
-              <Phone className="w-4 h-4" /> 519-670-9420
-            </span>
+            <button
+              onClick={handlePhoneClick}
+              className="flex items-center gap-1 underline hover:text-foreground transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              Call for Quote
+            </button>
             <span className="hidden sm:inline">•</span>
-            <span className="flex items-center gap-1">
-              <Mail className="w-4 h-4" />{" "}
-              <a href="mailto:dylanfrost@gmail.com" className="underline">
-                dylanfrost@gmail.com
-              </a>
-            </span>
+            <Link 
+              href="/contact"
+              className="flex items-center gap-1 underline hover:text-foreground transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              Send Message
+            </Link>
           </div>
         </div>
       </div>
