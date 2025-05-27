@@ -13,7 +13,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full max-w-2xl mb-8 text-center">
+    <section className="w-full max-w-2xl mb-8 px-4 text-center">
       <h2 className="text-2xl font-semibold mb-4">
         Let&apos;s Build Something Great Together
       </h2>

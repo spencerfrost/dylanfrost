@@ -1,6 +1,6 @@
 export default function TestimonialsSection() {
   return (
-    <section className="w-full max-w-2xl mb-8">
+    <section className="w-full max-w-2xl mb-8 px-4">
       <h2 className="text-xl font-semibold mb-2">What Clients Say</h2>
       <div className="bg-card rounded p-4 mb-2 shadow-sm">
         <p className="italic">

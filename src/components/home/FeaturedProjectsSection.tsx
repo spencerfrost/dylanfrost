@@ -50,7 +50,7 @@ export default function FeaturedProjectsSection() {
         </Link>
       </div>
       
-      <div className="text-center">
+      <div className="text-center hidden sm:block">
         <Button asChild variant="outline" size="lg">
           <Link href="/work">
             View My Complete Portfolio
