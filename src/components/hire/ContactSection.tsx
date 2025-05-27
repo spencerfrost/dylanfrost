@@ -46,7 +46,7 @@ export default function ContactSection() {
         size="lg"
         className="bg-yellow-700 hover:bg-yellow-800 text-white"
       >
-        <a href="/resume-placeholder.pdf">
+        <a href="/DylanResume.md" download>
           <Download className="mr-2 h-4 w-4" />
           Download Resume
         </a>
