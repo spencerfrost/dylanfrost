@@ -9,12 +9,13 @@ export interface GalleryProps {
   alt?: string;
   showNavigation?: boolean;
   className?: string;
+  initialIndex?: number;
 }
 
-const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt = '', showNavigation = false, className }) => {
+const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt = '', showNavigation = false, className, initialIndex = 0 }) => {
   const [mainApi, setMainApi] = useState<CarouselApi>();
   const [thumbApi, setThumbApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(initialIndex);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   useEffect(() => {
@@ -50,7 +51,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt =
   return (
     <div className={className}>
       {/* Main image carousel */}
-      <Carousel setApi={setMainApi} aria-label="Image gallery">
+      <Carousel setApi={setMainApi} opts={{ startIndex: initialIndex }} aria-label="Image gallery">
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index} className="flex justify-center items-center">
@@ -75,7 +76,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt =
       </Carousel>
 
       {/* Thumbnail carousel */}
-      <Carousel setApi={setThumbApi} opts={{ dragFree: true }} aria-label="Image thumbnails">
+      <Carousel setApi={setThumbApi} opts={{ dragFree: true, startIndex: initialIndex }} aria-label="Image thumbnails">
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index} className="basis-1/6 flex justify-center items-center aspect-video">
@@ -97,7 +98,6 @@ const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt =
           images={images}
           currentIndex={current}
           onClose={() => setLightboxOpen(false)}
-          setCurrent={setCurrent}
         />
       )}
     </div>

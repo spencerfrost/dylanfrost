@@ -6,10 +6,9 @@ interface LightboxProps {
   images: string[];
   currentIndex?: number;
   onClose: () => void;
-  setCurrent?: (index: number) => void;
 }
 
-const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex = 0, onClose, setCurrent }) => {
+const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex = 0, onClose }) => {
   return (
     <Dialog open onOpenChange={onClose} aria-label="Image lightbox">
       <DialogContent
@@ -19,6 +18,7 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex = 0, onClose, 
           images={images}
           enableLightbox={false}
           className="lightbox-gallery"
+          initialIndex={currentIndex}
         />
       </DialogContent>
     </Dialog>
