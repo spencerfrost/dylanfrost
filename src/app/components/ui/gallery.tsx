@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Lightbox from '@/components/ui/lightbox';
 import Image from 'next/image';
-import { EmblaCarouselType } from 'embla-carousel-react';
+import { UseEmblaCarouselType } from 'embla-carousel-react';
 
 export interface GalleryProps {
   images: string[];
@@ -13,8 +13,8 @@ export interface GalleryProps {
 }
 
 const Gallery: React.FC<GalleryProps> = ({ images, enableLightbox = false, alt = '', showNavigation = false, className }) => {
-  const [mainApi, setMainApi] = useState<EmblaCarouselType | null>(null);
-  const [thumbApi, setThumbApi] = useState<EmblaCarouselType | null>(null);
+  const [mainApi, setMainApi] = useState<UseEmblaCarouselType | null>(null);
+  const [thumbApi, setThumbApi] = useState<UseEmblaCarouselType | null>(null);
   const [current, setCurrent] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
