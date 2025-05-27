@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function ExperienceSection() {
   return (
-    <section className="w-full max-w-4xl mb-8">
+    <section className="w-full max-w-4xl mb-8 px-4">
       <h2 className="text-xl font-semibold mb-4">Professional Experience</h2>
       <div className="flex flex-col gap-4">
         <Card>

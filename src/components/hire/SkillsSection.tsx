@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function SkillsSection() {
   return (
-    <section className="w-full max-w-4xl mb-8 mt-8">
+    <section className="w-full max-w-4xl mb-8 mt-8 px-4">
       <h2 className="text-xl font-semibold mb-4">Construction Skills & Certifications</h2>
       
       <div className="space-y-4">

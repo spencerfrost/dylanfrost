@@ -1,6 +1,6 @@
 export default function WhyHireSection() {
   return (
-    <section className="w-full max-w-4xl mb-8">
+    <section className="w-full max-w-4xl mb-8 px-4">
       <h2 className="text-xl font-semibold mb-4">Key Construction Capabilities</h2>
       <div className="grid md:grid-cols-2 gap-6">
         <div>

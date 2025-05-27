@@ -3,7 +3,7 @@ import { Shield, Award, CheckCircle, MapPin } from "lucide-react";
 export default function ComplianceSection() {
   return (
     <section className="w-full max-w-4xl mb-8">
-      <div className="bg-secondary/50 rounded-lg p-6 text-center border border-border">
+      <div className="bg-secondary/50 sm:rounded-lg p-6 text-center border-y sm:border-x border-border">
         <h2 className="text-xl font-semibold mb-4">Fully Licensed & Insured</h2>
         <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">

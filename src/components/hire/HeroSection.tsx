@@ -1,24 +1,13 @@
-import Image from "next/image";
+import HeroSection from "@/components/shared/HeroSection";
 
-export default function HeroSection() {
+export default function HireHeroSection() {
   return (
-    <section className="w-full bg-secondary py-12 flex flex-col items-center border-b border-border">
-      <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-accent shadow mb-6 bg-white overflow-hidden">
-        <Image
-          src="/images/dylan-construction.png"
-          width={160}
-          height={160}
-          alt="Cartoon of Dylan with a resume and hard hat (placeholder)"
-          className="w-full h-full object-cover"
-          priority
-        />
-      </div>
-      <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground mb-2 text-center">
-        Hire Me
-      </h1>
-      <p className="text-lg text-muted-foreground text-center max-w-3xl mb-6">
-        Looking for a reliable, experienced construction and renovation specialist to bring over 25 years of hands-on expertise to your crew or company? I&apos;m seeking to leverage my comprehensive skills in carpentry, structural modifications, and project management, potentially within the Carpenters Union.
-      </p>
-    </section>
+    <HeroSection
+      imageSrc="/images/dylan-construction.png"
+      imageAlt="Cartoon of Dylan with a resume and hard hat (placeholder)"
+      title="Hire Me"
+      description="Looking for a reliable, experienced construction and renovation specialist to bring over 25 years of hands-on expertise to your crew or company? I'm seeking to leverage my comprehensive skills in carpentry, structural modifications, and project management, potentially within the Carpenters Union."
+      borderColor="accent"
+    />
   );
 }
