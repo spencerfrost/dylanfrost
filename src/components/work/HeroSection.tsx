@@ -14,9 +14,8 @@ export default function HeroSection() {
       <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground mb-2 text-center">
         My Work
       </h1>
-      <p className="text-lg text-muted-foreground text-center max-w-2xl mb-6">
-        Explore some of my recent projects and see the quality and care I bring
-        to every job.
+      <p className="text-lg text-muted-foreground text-center max-w-3xl mb-6">
+        Explore recent projects that showcase the quality, craftsmanship, and attention to detail I bring to every job. From complete renovations to custom builds, each project tells a story of transforming spaces and exceeding expectations.
       </p>
     </section>
   );
