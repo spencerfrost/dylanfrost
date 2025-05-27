@@ -81,7 +81,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
           
           <div>
-            <h4 className="text-sm font-semibold mb-1">Our Solution:</h4>
+            <h4 className="text-sm font-semibold mb-1">My Solution:</h4>
             <p className="text-xs text-muted-foreground">
               {project.solution}
             </p>
