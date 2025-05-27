@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
     // Send the email using Resend
     const { data, error } = await resend.emails.send({
       from: 'Dylan Frost Construction <onboarding@resend.dev>', // Will be updated after domain verification
-      to: ['s.s.frost@gmail.com'], // Dylan's email address
+      to: ['dylanfrost@gmail.com'], // Dylan's email address
       subject: subject,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
