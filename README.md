@@ -19,7 +19,7 @@ Serving the London and St. Thomas, Ontario area with fully licensed, insured, an
 - **Framework**: [Next.js 15](https://nextjs.org) with App Router
 - **Language**: TypeScript
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com)
-- **UI Components**: Custom components with [Radix UI](https://radix-ui.com) primitives
+- **UI Components**: [ShadCN/UI](https://ui.shadcn.com) (built on Radix UI primitives)
 - **Icons**: [Lucide React](https://lucide.dev)
 - **Fonts**: [Geist](https://vercel.com/font) font family
 - **Animations**: tw-animate-css
