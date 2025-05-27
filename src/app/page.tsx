@@ -1,10 +1,10 @@
 import SiteLayout from "../components/layout/SiteLayout";
 import HeroSection from "../components/home/HeroSection";
 import AboutSection from "../components/home/AboutSection";
-import WhatIOfferSection from "../components/home/WhatIOfferSection";
+import ServicesSection from "../components/home/ServicesSection";
+import FeaturedProjectsSection from "../components/home/FeaturedProjectsSection";
 import ProfessionalSummarySection from "../components/home/ProfessionalSummarySection";
-import SkillsCertificationsSection from "../components/home/SkillsCertificationsSection";
-import KeyCapabilitiesSection from "../components/home/KeyCapabilitiesSection";
+import CertificationsSection from "../components/home/CertificationsSection";
 import TestimonialsSection from "../components/home/TestimonialsSection";
 import ContactSection from "../components/home/ContactSection";
 
@@ -14,10 +14,10 @@ export default function HomePage() {
       <div className="min-h-screen bg-background text-foreground font-sans flex flex-col items-center">
         <HeroSection />
         <AboutSection />
-        <WhatIOfferSection />
+        <ServicesSection />
+        <FeaturedProjectsSection />
         <ProfessionalSummarySection />
-        <SkillsCertificationsSection />
-        <KeyCapabilitiesSection />
+        <CertificationsSection />
         <TestimonialsSection />
         <ContactSection />
       </div>

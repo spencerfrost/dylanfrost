@@ -18,11 +18,11 @@ export default function AboutSection() {
             A Contractor You Can Trust
           </h2>
           <p className="text-base text-muted-foreground max-w-xl">
-            I&apos;m Dylan Frost, a hands-on, detail-oriented contractor who
-            believes in honest work, clear communication, and getting
-            the job done right. Whether you&apos;re a homeowner or a builder, I bring
-            decades of experience and a friendly, can-do attitude to every
-            project.
+            I&apos;m Dylan Frost, a trusted contractor serving London and St. Thomas with 
+            over 25 years of experience. I believe in delivering exceptional quality, 
+            honest communication, and treating every project like it&apos;s my own home. 
+            From residential renovations to commercial projects, I&apos;m committed to 
+            exceeding your expectations.
           </p>
           <div className="flex flex-col sm:flex-row gap-2 items-center text-sm text-muted-foreground mt-4">
             <span className="flex items-center gap-1">
