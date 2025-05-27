@@ -14,8 +14,8 @@ export default function HeroSection() {
       <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground mb-2 text-center">
         Hire Me
       </h1>
-      <p className="text-lg text-muted-foreground text-center max-w-2xl mb-6">
-        Looking for a reliable, experienced contractor or team member? Here&apos;s what I bring to your crew or company.
+      <p className="text-lg text-muted-foreground text-center max-w-3xl mb-6">
+        Looking for a reliable, experienced construction and renovation specialist to bring over 25 years of hands-on expertise to your crew or company? I&apos;m seeking to leverage my comprehensive skills in carpentry, structural modifications, and project management, potentially within the Carpenters Union.
       </p>
     </section>
   );
