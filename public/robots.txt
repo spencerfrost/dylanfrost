@@ -1,0 +1,35 @@
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow legitimate search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow common scraping bots
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+User-agent: CherryPicker
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+# Crawl delay for all bots
+Crawl-delay: 1
+
+Sitemap: https://yourdomain.com/sitemap.xml
