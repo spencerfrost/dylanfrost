@@ -1,13 +1,4 @@
-import Image from "next/image";
-
-interface Project {
-  id: string;
-  title: string;
-  location: string;
-  description: string;
-  imageSrc: string;
-  imageAlt: string;
-}
+import ProjectCard, { type Project } from "./ProjectCard";
 
 const projects: Project[] = [
   {
@@ -35,32 +26,6 @@ const projects: Project[] = [
     imageAlt: "Project 3 before/after placeholder"
   }
 ];
-
-interface ProjectCardProps {
-  project: Project;
-}
-
-function ProjectCard({ project }: ProjectCardProps) {
-  return (
-    <div className="bg-white rounded-lg shadow p-4 flex flex-col items-center">
-      <div className="relative w-full h-32 sm:h-40 rounded mb-4 bg-gray-200 overflow-hidden">
-        <Image
-          src={project.imageSrc}
-          fill
-          alt={project.imageAlt}
-          className="object-cover"
-        />
-      </div>
-      <h2 className="font-bold text-lg mb-1">{project.title}</h2>
-      <p className="text-sm text-gray-600 mb-2">
-        {project.location}
-      </p>
-      <p className="text-base text-center">
-        {project.description}
-      </p>
-    </div>
-  );
-}
 
 export default function ProjectGallery() {
   return (
