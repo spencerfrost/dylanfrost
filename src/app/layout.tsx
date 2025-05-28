@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Dylan Frost" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dylanfrost.ca'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dylanfrost.vercel.app/'),
   alternates: {
     canonical: '/',
   },
