@@ -1,5 +1,5 @@
 import { Wrench, Home, Building2, Hammer } from "lucide-react";
-import { Card, CardHeader, CardTitle, CardContent } from "@/app/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function ServicesSection() {
   return (
