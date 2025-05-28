@@ -13,6 +13,10 @@ const badgeVariants = cva(
           "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
         secondary:
           "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
+        tertiary:
+          "border-transparent bg-tertiary text-tertiary-foreground [a&]:hover:bg-tertiary/90",
+        quaternary:
+          "border-transparent bg-quaternary text-quaternary-foreground [a&]:hover:bg-quaternary/90",
         accent:
           "border-transparent bg-accent text-accent-foreground [a&]:hover:bg-accent/90",
         destructive:
