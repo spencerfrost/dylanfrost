@@ -41,20 +41,34 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-charcoal: var(--charcoal);
+  --color-dark-charcoal: var(--dark-charcoal);
+  --color-warm-brown: var(--warm-brown);
+  --color-light-brown: var(--light-brown);
+  --color-forest-green: var(--forest-green);
+  --color-sage-green: var(--sage-green);
+  --color-warm-tan: var(--warm-tan);
+  --color-cream: var(--cream);
+  --color-deep-lavender: var(--deep-lavender);
+  --color-tertiary-foreground: var(--tertiary-foreground);
+  --color-tertiary: var(--tertiary);
+  --color-quaternary-foreground: var(--quaternary-foreground);
+  --color-quaternary: var(--quaternary);
 }
 
 :root {
   --radius: 0.625rem;
   
   /* Dark earthy palette - perfect for a carpenter/contractor */
-  --charcoal: #1a1a1a;           /* Deep charcoal for main background */
-  --dark-charcoal: #0f0f0f;     /* Darker charcoal for cards/containers */
-  --warm-brown: #8b4513;        /* Rich saddle brown - wood tones */
-  --light-brown: #a0522d;       /* Lighter sienna brown */
-  --forest-green: #2d4a2b;      /* Deep forest green */
-  --sage-green: #6b8e5a;        /* Muted sage green */
-  --warm-tan: #d2b48c;          /* Warm tan for light text/highlights */
-  --cream: #f5f5dc;             /* Soft cream for primary text */
+  --charcoal: #1a1a1a;
+  --dark-charcoal: #0f0f0f;
+  --warm-brown: #8b4513;
+  --light-brown: #a0522d;
+  --forest-green: #2d4a2b;
+  --sage-green: #6b8e5a;
+  --warm-tan: #b0aa44;
+  --cream: #f5f5dc;
+  --deep-lavender: #a374ac;
 
   /* Theme mappings for dark carpenter theme */
   --background: var(--charcoal);
@@ -69,6 +83,10 @@
   --primary-foreground: var(--charcoal);
   --secondary: var(--forest-green);
   --secondary-foreground: var(--cream);
+  --tertiary: var(--warm-tan);
+  --tertiary-foreground: var(--charcoal);
+  --quaternary: var(--deep-lavender);
+  --quaternary-foreground: var(--charcoal);
   --accent: var(--warm-brown);
   --accent-foreground: var(--cream);
 
