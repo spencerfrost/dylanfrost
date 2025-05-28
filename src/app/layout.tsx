@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/layout/Navigation";
-import Footer from "@/components/layout/Footer";
+import Navigation from "@/app/components/layout/Navigation";
+import Footer from "@/app/components/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,17 +15,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dylan Frost - Professional Contractor & Labourer",
-  description: "Experienced contractor and skilled labourer providing quality construction, renovation, and maintenance services. Certified, reliable, and committed to excellence.",
-  keywords: "contractor, labourer, construction, renovation, maintenance, building, skilled trades",
+  title: "Dylan Frost - Professional Contractor & Carpenter | London, Ontario",
+  description: "Experienced contractor and skilled carpenter with 25+ years providing quality construction, renovation, and maintenance services in London and St. Thomas, Ontario. Certified, reliable, and committed to excellence.",
+  keywords: "contractor, carpenter, construction, renovation, maintenance, building, skilled trades, London Ontario, St. Thomas Ontario, home improvement, custom carpentry",
   authors: [{ name: "Dylan Frost" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dylanfrost.ca'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: "Dylan Frost - Professional Contractor & Labourer",
-    description: "Experienced contractor and skilled labourer providing quality construction services.",
+    title: "Dylan Frost - Professional Contractor & Carpenter",
+    description: "Experienced contractor with 25+ years providing quality construction services in London, Ontario.",
     type: "website",
-    locale: "en_US",
+    locale: "en_CA",
+    siteName: "Dylan Frost Construction",
+    images: [
+      {
+        url: '/images/dylan-main.png',
+        width: 1200,
+        height: 630,
+        alt: 'Dylan Frost - Professional Contractor',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Dylan Frost - Professional Contractor & Carpenter",
+    description: "25+ years of quality construction services in London, Ontario.",
+    images: ['/images/dylan-main.png'],
   },
 };
 
