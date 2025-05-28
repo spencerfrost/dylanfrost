@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Alert } from "@/components/ui/alert";
 
 interface ContactFormProps {
   readonly className?: string;
@@ -74,12 +75,13 @@ export default function ContactForm({ className }: ContactFormProps) {
       <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
       
       {status.message && (
-        <div className={`mb-4 p-3 rounded-md ${
-          status.type === 'success' 
-            ? 'bg-green-50 text-green-800 border border-green-200' 
-            : 'bg-red-50 text-red-800 border border-red-200'
-        }`}>
-          {status.message}
+        <div className="mb-4">
+          <Alert
+            variant={status.type === 'success' ? 'default' : 'destructive'}
+            className="rounded-md"
+          >
+            {status.message}
+          </Alert>
         </div>
       )}
       
