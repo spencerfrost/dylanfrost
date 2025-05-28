@@ -1,18 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const links = [
-    { href: "/", label: "Home", color: "hover:text-primary" },
-    { href: "/work", label: "My Work", color: "hover:text-primary" },
-    { href: "/hire", label: "Hire Me", color: "hover:text-accent" },
-    { href: "/contact", label: "Contact", color: "hover:text-primary" },
+    { href: "/work", label: "My Work" },
+    { href: "/hire", label: "Hire Me" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -20,7 +24,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo/Brand */}
-          <Link href="/" className="text-xl font-bold text-primary">
+          <Link href="/" className="text-2xl font-bold text-primary">
             Dylan Frost
           </Link>
 
@@ -30,7 +34,7 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`${link.color} transition-colors duration-200`}
+                className={`hover:text-accent transition-colors duration-200`}
               >
                 {link.label}
               </Link>
@@ -45,19 +49,19 @@ export default function Navigation() {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle navigation menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {mounted && isOpen ? <X size={24} /> : <Menu size={24} />}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
+        {mounted && isOpen && (
           <div className="md:hidden pb-4 border-t border-border mt-4 pt-4">
             <div className="flex flex-col gap-4">
               {links.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`${link.color} transition-colors duration-200 text-lg font-semibold`}
+                  className="hover:text-accent transition-colors duration-200 text-lg font-semibold"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
