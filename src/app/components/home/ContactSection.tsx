@@ -30,7 +30,7 @@ export default function ContactSection() {
           onClick={handlePhoneClick}
           size="lg"
           variant="outline"
-          className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+          className="border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:border-none"
         >
           <Phone className="w-4 h-4 mr-2" />
           Call Now

@@ -9,11 +9,11 @@ export default function SkillsSection() {
         <div>
           <h3 className="text-lg font-medium mb-2 text-muted-foreground">Equipment Operation</h3>
           <div className="flex flex-wrap gap-2">
-            <Badge variant="accent">CNC machines</Badge>
-            <Badge variant="accent">Diamond cutting tools</Badge>
-            <Badge variant="accent">Metal working equipment</Badge>
-            <Badge variant="accent">Concrete machinery</Badge>
-            <Badge variant="accent">Woodworking tools</Badge>
+            <Badge>CNC machines</Badge>
+            <Badge>Diamond cutting tools</Badge>
+            <Badge>Metal working equipment</Badge>
+            <Badge>Concrete machinery</Badge>
+            <Badge>Woodworking tools</Badge>
           </div>
         </div>
 
@@ -29,16 +29,16 @@ export default function SkillsSection() {
         <div>
           <h3 className="text-lg font-medium mb-2 text-muted-foreground">Safety Certifications</h3>
           <div className="flex flex-wrap gap-2">
-            <Badge variant="default">WHMIS certified</Badge>
-            <Badge variant="default">MSDS trained</Badge>
+            <Badge variant="tertiary">WHMIS certified</Badge>
+            <Badge variant="tertiary">MSDS trained</Badge>
           </div>
         </div>
 
         <div>
           <h3 className="text-lg font-medium mb-2 text-muted-foreground">Languages</h3>
           <div className="flex flex-wrap gap-2">
-            <Badge variant="outline">English (Native)</Badge>
-            <Badge variant="outline">French (OAC Level)</Badge>
+            <Badge variant="quaternary">English (Native)</Badge>
+            <Badge variant="quaternary">French (OAC Level)</Badge>
           </div>
         </div>
       </div>

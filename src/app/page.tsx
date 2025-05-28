@@ -35,12 +35,12 @@ export default function HomePage() {
         description="25+ years of honest, high-quality construction and renovation in London, Ontario."
         actions={
         <>
-          <Button asChild size="lg">
+          <Button asChild size="lg" variant="accent">
           <a href="/work">
             My Work
           </a>
           </Button>
-          <Button asChild variant="outline" size="lg">
+          <Button asChild size="lg">
           <a href="/hire">
             Hire Me
           </a>

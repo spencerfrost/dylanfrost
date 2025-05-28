@@ -6,9 +6,12 @@ import ComplianceSection from "@/components/hire/ComplianceSection";
 import WhyHireSection from "@/components/hire/WhyHireSection";
 import ContactSection from "@/components/hire/ContactSection";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Hire Dylan Frost - Experienced Contractor & Carpenter | London, Ontario",
+  title:
+    "Hire Dylan Frost - Experienced Contractor & Carpenter | London, Ontario",
   description:
     "Hire Dylan Frost, a professional contractor with 25+ years experience in construction, renovation, and carpentry. Available for employment in London and St. Thomas, Ontario.",
   keywords:
@@ -30,6 +33,14 @@ export default function Hire() {
         title="Hire Me"
         description="Looking for a reliable, experienced construction and renovation specialist to bring over 25 years of hands-on expertise to your crew or company? I'm seeking to leverage my comprehensive skills in carpentry, structural modifications, and project management, potentially within the Carpenters Union."
         borderColor="accent"
+        actions={
+          <Button asChild size="lg">
+            <a href="/DylanResume.md" download>
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
+            </a>
+          </Button>
+        }
       />
       <SkillsSection />
       <ExperienceSection />

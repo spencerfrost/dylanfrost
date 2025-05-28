@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Download, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactSection() {
@@ -11,7 +11,7 @@ export default function ContactSection() {
     window.location.href = `tel:+1${phone}`;
   };
   return (
-    <section className="w-full max-w-4xl mb-8 text-center">
+    <section className="w-full max-w-4xl mt-4 text-center">
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">Let&apos;s Work Together</h2>
         <p className="text-muted-foreground mb-4">Ready to discuss your next project? Get in touch!</p>
@@ -32,24 +32,12 @@ export default function ContactSection() {
             onClick={handlePhoneClick}
             size="lg"
             variant="outline"
-            className="border-yellow-700 text-yellow-700 hover:bg-yellow-50"
           >
             <Phone className="mr-2 h-4 w-4" />
             Call for Quote
           </Button>
         </div>
       </div>
-
-      <Button
-        asChild
-        size="lg"
-        className="bg-yellow-700 hover:bg-yellow-800 text-white"
-      >
-        <a href="/DylanResume.md" download>
-          <Download className="mr-2 h-4 w-4" />
-          Download Resume
-        </a>
-      </Button>
     </section>
   );
 }
