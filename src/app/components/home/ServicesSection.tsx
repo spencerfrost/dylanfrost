@@ -10,7 +10,7 @@ export default function ServicesSection() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg">
               <Home className="w-6 h-6 text-primary" />
-              Full-Service Renovations
+              Full Renovations
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -34,7 +34,7 @@ export default function ServicesSection() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg">
               <Hammer className="w-6 h-6 text-primary" />
-              Decks & Outdoor Living
+              Decks & Patios
             </CardTitle>
           </CardHeader>
           <CardContent>

@@ -42,7 +42,7 @@ export default function FeaturedProjectsSection() {
 
         <Link href="/work" className="group">
           <div className="relative h-64 rounded-lg overflow-hidden shadow-lg transition-transform group-hover:scale-105 bg-gradient-to-br from-primary/20 to-primary/40 flex items-center justify-center">
-            <div className="text-center text-primary-foreground">
+            <div className="text-center text-foreground/80">
               <h3 className="text-lg font-semibold mb-2">View All Projects</h3>
               <ArrowRight className="w-8 h-8 mx-auto" />
             </div>
