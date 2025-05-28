@@ -28,8 +28,8 @@ export default function HomePage() {
         imageAlt="Cartoon of Dylan the contractor, smiling and holding a hammer"
         title={
         <>
-          Hi, I'm Dylan. <br />
-          Let's build something great together!
+          Hi, I&#39;m Dylan. <br />
+          Let&#39;s build something great together!
         </>
         }
         description="25+ years of honest, high-quality construction and renovation in London, Ontario."

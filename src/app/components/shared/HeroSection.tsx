@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 interface HeroSectionProps {
   readonly imageSrc: string;
   readonly imageAlt: string;
-  readonly title: string;
+  readonly title: string | ReactNode;
   readonly description: string;
   readonly actions?: ReactNode;
   readonly borderColor?: "primary" | "accent";
